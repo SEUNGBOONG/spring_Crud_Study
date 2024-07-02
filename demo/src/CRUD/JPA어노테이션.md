@@ -16,3 +16,16 @@ JPA에서 제공하는 애노테이션으로, 기본 키 값을 자동으로 생
 
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+
+@OneToMany: 일다다 관계 매핑입니다. mappedBy를 통해서 연관관계 주인 필드를 설정합니다.
+@ManyToOne: OneToMany의 반대 관계인 N:1 관계 매핑 어노테이션입니다.
+@JoinColumn: 외래키를 매핑할때 사용합니다. name에는 참조하는 테이블의 기본키 칼럼명이 들어갑니다.
+cascade: JPA에는 영속화란 개념이 있습니다. CascadeType.ALL이면 부모가 영속화가 되면 자식도 영속화가 됩니다. 정확한 표현은 아니지만 부모와 자식의 상태가 동시에 변하게 합니다.
+fetch: EAGER, LAZY로 나뉩니다.
+EAGER(즉시로딩): 연관관계가 설정된 모든 테이블에 대해서 조인이 이뤄집니다.
+LAZY(지연로딩): 기본적으로 연관관계 테이블을 조인하지 않고 조인이 필요한 경우에 Join을 합니다.
+
+
+EnumType.ORDINAL: enum 순서 값을 DB에 저장
+EnumType.STRING: enum 이름을 DB에 저장

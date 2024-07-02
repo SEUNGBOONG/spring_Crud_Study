@@ -19,7 +19,6 @@ import lombok.Setter;
 @Entity
 public class tradeData {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long tradeId;
