@@ -17,7 +17,7 @@ import lombok.Setter;
 @Setter
 @Table(name = "tradeData")
 @Entity
-public class tradeData {
+public class TradeData {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
