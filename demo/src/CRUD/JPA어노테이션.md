@@ -13,3 +13,6 @@ JPA에서 제공하는 애노테이션으로, 이 필드가 엔티티의 기본 
 @GeneratedValue:
 
 JPA에서 제공하는 애노테이션으로, 기본 키 값을 자동으로 생성하도록 지정합니다. 기본 키의 생성 전략은 설정에 따라 달라질 수 있으며, 일반적으로 데이터베이스의 시퀀스나 자동 증가 컬럼을 사용합니다.
+
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
