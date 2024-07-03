@@ -9,4 +9,5 @@ spring.datasource.username=root
 spring.datasource.password=password
 spring.jpa.hibernate.ddl-auto=update
 
-application.properties 설정 
+application.properties 설정
+SELECT VERSION(); 버전확인할 수 있음 
