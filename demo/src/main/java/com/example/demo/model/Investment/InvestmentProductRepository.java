@@ -1,7 +1,6 @@
 package com.example.demo.model.Investment;
 
-import com.example.demo.model.jpa.JpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface InvestmentProductRepository extends JpaRepository<InvestmentProducts, Long> {
-
 }
