@@ -1,27 +1,22 @@
 package com.example.demo.model.userData;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDate;
 
 @Getter
 @Setter
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
-
-    private Long userEmail;
-    private Long userJoinDate;
-    private Long userPassword;
-
-    private String userName;
+    private String name;
+    private String email;
+    private String password;
+    private LocalDate joinDate;
 }

@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.model.userData.User;
 import com.example.demo.model.userData.UserRepository;
-import jakarta.persistence.EntityNotFoundException;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,34 +12,21 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
-    public User saveUser(Long userId, Long userPassword) {
-        Optional<User> user = userRepository.findByUserId(userId);
-        save(user);
-        return user.get();
+    public User saveUser(User user) {
+        return userRepository.save(user);
     }
 
-    private static void save(final Optional<User> user) {
-        if (!user.isPresent()) {
-            throw new EntityNotFoundException("회원가입이 되어있지 않습니다.");
-        }
+    public Optional<User> findUserById(Long userId) {
+        return userRepository.findById(userId);
     }
 
-    public User joinExistUser(Long userId) {
-        except(userId);
-        return joinExistUser(userId);
+    public Optional<User> findUserByEmail(String email) {
+        return userRepository.findByEmail(email);
     }
 
-    private static void except(final Long userId) {
-        if (userId.equals(userId)) {
-            try {
-                throw new Exception("이미 회원가입이 되어있습니다.");
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
+    public void deleteUserById(Long userId) {
+        userRepository.deleteById(userId);
     }
 }
-
-
