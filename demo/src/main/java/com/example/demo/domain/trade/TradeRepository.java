@@ -1,4 +1,4 @@
-package com.example.demo.model.trade;
+package com.example.demo.domain.trade;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

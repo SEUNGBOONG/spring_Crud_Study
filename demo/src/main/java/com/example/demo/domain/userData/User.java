@@ -1,4 +1,4 @@
-package com.example.demo.model.userData;
+package com.example.demo.domain.userData;
 
 import jakarta.persistence.*;
 import lombok.Getter;

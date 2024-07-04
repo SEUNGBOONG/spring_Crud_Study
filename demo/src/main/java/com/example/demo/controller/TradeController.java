@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.trade.Trade;
+import com.example.demo.domain.trade.Trade;
 import com.example.demo.service.TradeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

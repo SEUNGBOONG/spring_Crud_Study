@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.model.trade.Trade;
-import com.example.demo.model.trade.TradeRepository;
+import com.example.demo.domain.trade.Trade;
+import com.example.demo.domain.trade.TradeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

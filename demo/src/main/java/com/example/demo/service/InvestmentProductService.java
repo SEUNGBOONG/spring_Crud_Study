@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.model.Investment.InvestmentProductRepository;
-import com.example.demo.model.Investment.InvestmentProducts;
+import com.example.demo.domain.Investment.InvestmentProductRepository;
+import com.example.demo.domain.Investment.InvestmentProducts;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

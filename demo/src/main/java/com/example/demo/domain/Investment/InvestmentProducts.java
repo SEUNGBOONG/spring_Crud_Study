@@ -1,6 +1,6 @@
-package com.example.demo.model.Investment;
+package com.example.demo.domain.Investment;
 
-import com.example.demo.model.trade.ProductsType;
+import com.example.demo.domain.trade.ProductsType;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

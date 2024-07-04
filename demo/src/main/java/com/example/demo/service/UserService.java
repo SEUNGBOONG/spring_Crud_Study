@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.model.userData.User;
-import com.example.demo.model.userData.UserRepository;
+import com.example.demo.domain.userData.User;
+import com.example.demo.domain.userData.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package com.example.demo.model.trade;
+package com.example.demo.domain.trade;
 
-import com.example.demo.model.Investment.InvestmentProducts;
-import com.example.demo.model.userData.User;
+import com.example.demo.domain.Investment.InvestmentProducts;
+import com.example.demo.domain.userData.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
